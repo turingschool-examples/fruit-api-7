@@ -4,6 +4,8 @@ This repository is meant to be a practice assessment for Mod 3 BE.
 
 Skills: 
 * API Consumption
+* Feature testing for API data using Webmock and fixture data (and/or VCR)
+* Refactoring into facade/service patterns, and optional PORO
 
 ## Setup
 Requires Ruby 3.2.2 and Rails 7.0.x
