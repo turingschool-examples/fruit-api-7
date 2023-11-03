@@ -1,0 +1,7 @@
+<h1>Fruit Search</h1>
+<%= form_with url: "/fruits", method: :post, data: { turbo: false } do |f| %>
+   <%= f.label :search, "Search for Fruit" %>
+   <%= f.text_field :search %>
+
+   <%= f.submit "Search" %>
+<% end %>
