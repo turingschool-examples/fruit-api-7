@@ -57,7 +57,7 @@ When I click this link
 I am taken to a "/fruits/nutritional" page
 Where I see the names of fruits that have a similar nutritional value
 
-# Hint: use the min/max API endpoints
+# Hint: choose a specific nutritional key (e.g. "calories" or "fat" or "sugar"), and use the min/max API endpoints
 ```
 
 ### User Story 3 - Clickable Names
