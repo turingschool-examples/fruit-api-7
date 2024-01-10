@@ -8,7 +8,7 @@ Skills:
 * Refactoring into facade/service patterns, and optional PORO
 
 ## Setup
-Requires Ruby 3.2.2 and Rails 7.0.x
+Requires Ruby 3.2.2 and Rails 7.1.2
 
 1. Fork/clone this repository. Set up the repo as normal
 2. Run the usual setup steps (`bundle install`, `rails db:create`)
