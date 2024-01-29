@@ -1,7 +1,7 @@
 <h1>Related Fruits</h1>
 <% @related_fruits.each do |fruit| %>
   <div id="related_fruit-<%= fruit.name %>">
-    <h2><%= "Name: #{fruit.name}" %></h2>
+    <h2><%= link_to "Name: #{fruit.name}", fruits_path(query: fruit.name)  %></h2>
     <h3><%= "Family: #{fruit.family}" %></h3>
     <h3><%= "Order: #{fruit.order}" %></h3>
     <h3><%= "Genus: #{fruit.genus}" %></h3>

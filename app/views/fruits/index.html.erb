@@ -1,0 +1,15 @@
+<h1>Search Results</h1>
+<h2><%= "Name: #{@fruit.name}" %></h2>
+<h3><%= "Family: #{@fruit.family}" %></h3>
+<h3><%= "Order: #{@fruit.order}" %></h3>
+<h3><%= "Genus: #{@fruit.genus}" %></h3>
+<h3><%= "Nutrition:" %></h2>
+<ul>
+  <li><%= "Calories: #{@fruit.calories}" %>
+  <li><%= "Fat: #{@fruit.fat}" %>
+  <li><%= "Sugar: #{@fruit.sugar}" %>
+  <li><%= "Carbohydrates: #{@fruit.carbohydrates}" %>
+  <li><%= "Protein: #{@fruit.protein}" %>
+</ul>
+
+<h4><%= link_to "Find Similar Fruits by Nutrition Value", fruits_nutritional_index_path(max_calories: @fruit.calories)%>
