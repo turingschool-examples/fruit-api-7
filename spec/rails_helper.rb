@@ -1,10 +1,10 @@
 # This file is copied to spec/ when you run 'rails generate rspec:install'
-require 'spec_helper'
-ENV['RAILS_ENV'] ||= 'test'
-require_relative '../config/environment'
+require "spec_helper"
+ENV["RAILS_ENV"] ||= "test"
+require_relative "../config/environment"
 # Prevent database truncation if the environment is production
 abort("The Rails environment is running in production mode!") if Rails.env.production?
-require 'rspec/rails'
+require "rspec/rails"
 # Add additional requires below this line. Rails is not loaded until this point!
 
 # Requires supporting ruby files with custom matchers and macros, etc, in
@@ -32,7 +32,7 @@ end
 RSpec.configure do |config|
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_paths = [
-    Rails.root.join('spec/fixtures')
+    Rails.root.join("spec/fixtures")
   ]
 
   # If you're not using ActiveRecord, or you'd prefer not to run each of your
@@ -66,11 +66,11 @@ end
 
 VCR.configure do |config|
   config.before_record do |i|
-    i.response.body.force_encoding('UTF-8')
+    i.response.body.force_encoding("UTF-8")
   end
-  config.cassette_library_dir = 'spec/fixtures/vcr_cassettes'
+  config.cassette_library_dir = "spec/fixtures/vcr_cassettes"
   config.hook_into :webmock
-  config.filter_sensitive_data('<API Key>') { ENV['name_api_key'] } #name_api_key from config/application.yml
+  config.filter_sensitive_data("<API Key>") { ENV["name_api_key"] } # name_api_key from config/application.yml
   config.configure_rspec_metadata!
   config.default_cassette_options = { re_record_interval: 30.days }
   config.allow_http_connections_when_no_cassette = true
