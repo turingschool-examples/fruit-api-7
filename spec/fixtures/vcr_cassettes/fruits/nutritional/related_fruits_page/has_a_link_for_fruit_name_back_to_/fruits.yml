@@ -1,0 +1,136 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.fruityvice.com/api/fruit/apple
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.16.1
+      Date:
+      - Mon, 29 Jan 2024 20:05:52 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+    body:
+      encoding: UTF-8
+      string: '{"name":"Apple","id":6,"family":"Rosaceae","order":"Rosales","genus":"Malus","nutritions":{"calories":52,"fat":0.4,"sugar":10.3,"carbohydrates":11.4,"protein":0.3}}'
+  recorded_at: Mon, 29 Jan 2024 20:05:52 GMT
+- request:
+    method: get
+    uri: https://www.fruityvice.com/api/fruit/calories?max=52
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.16.1
+      Date:
+      - Mon, 29 Jan 2024 20:05:53 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+    body:
+      encoding: UTF-8
+      string: '[{"name":"Strawberry","id":3,"family":"Rosaceae","order":"Rosales","genus":"Fragaria","nutritions":{"calories":29,"fat":0.4,"sugar":5.4,"carbohydrates":5.5,"protein":0.8}},{"name":"Blackberry","id":64,"family":"Rosaceae","order":"Rosales","genus":"Rubus","nutritions":{"calories":40,"fat":0.4,"sugar":4.5,"carbohydrates":9.0,"protein":1.3}},{"name":"Lingonberry","id":65,"family":"Ericaceae","order":"Ericales","genus":"Vaccinium","nutritions":{"calories":50,"fat":0.34,"sugar":5.74,"carbohydrates":11.3,"protein":0.75}},{"name":"Pineapple","id":10,"family":"Bromeliaceae","order":"Poales","genus":"Ananas","nutritions":{"calories":50,"fat":0.12,"sugar":9.85,"carbohydrates":13.12,"protein":0.54}},{"name":"Gooseberry","id":69,"family":"Grossulariaceae","order":"Saxifragales","genus":"Ribes","nutritions":{"calories":44,"fat":0.6,"sugar":0.0,"carbohydrates":10.0,"protein":0.9}},{"name":"Plum","id":71,"family":"Rosaceae","order":"Rosales","genus":"Prunus","nutritions":{"calories":46,"fat":0.28,"sugar":9.92,"carbohydrates":11.4,"protein":0.7}},{"name":"Orange","id":2,"family":"Rutaceae","order":"Sapindales","genus":"Citrus","nutritions":{"calories":43,"fat":0.2,"sugar":8.2,"carbohydrates":8.3,"protein":1.0}},{"name":"GreenApple","id":72,"family":"Rosaceae","order":"Rosales","genus":"Malus","nutritions":{"calories":21,"fat":0.1,"sugar":6.4,"carbohydrates":3.1,"protein":0.4}},{"name":"Watermelon","id":25,"family":"Cucurbitaceae","order":"Cucurbitales","genus":"Citrullus","nutritions":{"calories":30,"fat":0.2,"sugar":6.0,"carbohydrates":8.0,"protein":0.6}},{"name":"Lemon","id":26,"family":"Rutaceae","order":"Sapindales","genus":"Citrus","nutritions":{"calories":29,"fat":0.3,"sugar":2.5,"carbohydrates":9.0,"protein":1.1}},{"name":"Blueberry","id":33,"family":"Rosaceae","order":"Rosales","genus":"Fragaria","nutritions":{"calories":29,"fat":0.4,"sugar":5.4,"carbohydrates":5.5,"protein":0.0}},{"name":"Apple","id":6,"family":"Rosaceae","order":"Rosales","genus":"Malus","nutritions":{"calories":52,"fat":0.4,"sugar":10.3,"carbohydrates":11.4,"protein":0.3}},{"name":"Apricot","id":35,"family":"Rosaceae","order":"Rosales","genus":"Prunus","nutritions":{"calories":15,"fat":0.1,"sugar":3.2,"carbohydrates":3.9,"protein":0.5}},{"name":"Papaya","id":42,"family":"Caricaceae","order":"Caricacea","genus":"Carica","nutritions":{"calories":43,"fat":0.4,"sugar":1.0,"carbohydrates":11.0,"protein":0.0}},{"name":"Melon","id":41,"family":"Cucurbitaceae","order":"Cucurbitaceae","genus":"Cucumis","nutritions":{"calories":34,"fat":0.0,"sugar":8.0,"carbohydrates":8.0,"protein":0.0}},{"name":"Tangerine","id":77,"family":"Rutaceae","order":"Sapindales","genus":"Citrus","nutritions":{"calories":45,"fat":0.4,"sugar":9.1,"carbohydrates":8.3,"protein":0.0}},{"name":"Pitahaya","id":78,"family":"Cactaceae","order":"Caryophyllales","genus":"Cactaceae","nutritions":{"calories":36,"fat":0.4,"sugar":3.0,"carbohydrates":7.0,"protein":1.0}},{"name":"Lime","id":44,"family":"Rutaceae","order":"Sapindales","genus":"Citrus","nutritions":{"calories":25,"fat":0.1,"sugar":1.7,"carbohydrates":8.4,"protein":0.3}},{"name":"Morus","id":82,"family":"Moraceae","order":"Rosales","genus":"Morus","nutritions":{"calories":43,"fat":0.39,"sugar":8.1,"carbohydrates":9.8,"protein":1.44}},{"name":"Feijoa","id":76,"family":"Myrtaceae","order":"Myrtoideae","genus":"Sellowiana","nutritions":{"calories":44,"fat":0.4,"sugar":3.0,"carbohydrates":8.0,"protein":0.6}},{"name":"Cranberry","id":87,"family":"Ericaceae","order":"Ericales","genus":"Vaccinium","nutritions":{"calories":46,"fat":0.1,"sugar":4.0,"carbohydrates":12.2,"protein":0.4}},{"name":"Cherry","id":9,"family":"Rosaceae","order":"Rosales","genus":"Prunus","nutritions":{"calories":50,"fat":0.3,"sugar":8.0,"carbohydrates":12.0,"protein":1.0}},{"name":"Peach","id":86,"family":"Rosaceae","order":"Rosales","genus":"Prunus","nutritions":{"calories":39,"fat":0.25,"sugar":8.4,"carbohydrates":9.5,"protein":0.9}},{"name":"Horned
+        Melon","id":95,"family":"Cucurbitaceae","order":"Cucurbitales","genus":"Cucumis","nutritions":{"calories":44,"fat":1.26,"sugar":0.5,"carbohydrates":7.56,"protein":1.78}},{"name":"Pomelo","id":98,"family":"Rutaceae","order":"Sapindales","genus":"Citrus","nutritions":{"calories":37,"fat":0.0,"sugar":8.5,"carbohydrates":9.67,"protein":0.82}}]'
+  recorded_at: Mon, 29 Jan 2024 20:05:53 GMT
+- request:
+    method: get
+    uri: https://www.fruityvice.com/api/fruit/Strawberry
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.16.1
+      Date:
+      - Mon, 29 Jan 2024 20:05:53 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+    body:
+      encoding: UTF-8
+      string: '{"name":"Strawberry","id":3,"family":"Rosaceae","order":"Rosales","genus":"Fragaria","nutritions":{"calories":29,"fat":0.4,"sugar":5.4,"carbohydrates":5.5,"protein":0.8}}'
+  recorded_at: Mon, 29 Jan 2024 20:05:53 GMT
+recorded_with: VCR 6.2.0
