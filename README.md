@@ -3,16 +3,17 @@
 This repository is meant to be a practice assessment for Mod 3 BE.
 
 Skills:
+
 * API Consumption
 * Feature testing for API data using Webmock and fixture data (and/or VCR)
 * Refactoring into facade/service patterns, and optional PORO
 
 ## Setup
+
 Requires Ruby 3.2.2 and Rails 7.1.2
 
 1. Fork/clone this repository. Set up the repo as normal
 2. Run the usual setup steps (`bundle install`, `rails db:create`)
-
 
 ## Challenge
 
@@ -22,10 +23,9 @@ Requires Ruby 3.2.2 and Rails 7.1.2
 
 **NOTE**: This application comes with a pre-built form at the `"welcome#index"` action and view. *Do not change the path for this form*, rather make the pre-existing form work alongside the user story below.
 
-
 ### User Story 1 - Basic Search
 
-```
+```plaintext
 As a user,
 When I visit the root path ("/"),
 I see a form with a search box for fruit and a button.
@@ -48,7 +48,7 @@ And I see information about that fruit, including
 
 ### User Story 2 - Nutritional Value
 
-```
+```plaintext
 As a user,
 When I am on a search result page "/fruits"
 after making a successful search,
@@ -62,7 +62,7 @@ Where I see the names of fruits that have a similar nutritional value
 
 ### User Story 3 - Clickable Names
 
-```
+```plaintext
 As a user,
 When I use the Nutritional Value search
 and I see the names of fruits that have similar nutritional value,
