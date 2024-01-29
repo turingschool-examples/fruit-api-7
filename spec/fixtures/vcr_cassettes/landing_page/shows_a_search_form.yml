@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx/1.16.1
       Date:
-      - Mon, 29 Jan 2024 03:01:09 GMT
+      - Mon, 29 Jan 2024 05:14:28 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -43,5 +43,5 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"name":"Apple","id":6,"family":"Rosaceae","order":"Rosales","genus":"Malus","nutritions":{"calories":52,"fat":0.4,"sugar":10.3,"carbohydrates":11.4,"protein":0.3}}'
-  recorded_at: Mon, 29 Jan 2024 03:01:09 GMT
+  recorded_at: Mon, 29 Jan 2024 05:14:28 GMT
 recorded_with: VCR 6.2.0
