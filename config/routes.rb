@@ -8,5 +8,4 @@ Rails.application.routes.draw do
   namespace :fruits do
     resources :nutritional, only: %i[index]
   end
-
 end
