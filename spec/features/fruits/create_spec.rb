@@ -1,12 +1,12 @@
 require "rails_helper"
 
-RSpec.describe "/", type: :feature do
-  describe "landing page" do
-    before(:each) do
-      visit root_path
-    end
+RSpec.describe "/fruits", type: :feature do
+  before(:each) do
+    visit root_path
+  end
 
-    it "shows a search form", :vcr do
+  describe "fruits search results" do
+    it "shows a fruit based on search results", :vcr do
       fill_in "Search for Fruit", with: "apple"
       click_on "Search"
 
