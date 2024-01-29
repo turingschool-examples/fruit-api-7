@@ -1,0 +1,64 @@
+# The behavior of RuboCop can be controlled via the .rubocop.yml
+# configuration file. It makes it possible to enable/disable
+# certain cops (checks) and to alter their behavior if they accept
+# any parameters. The file can be placed either in your home
+# directory or in some project directory.
+#
+# RuboCop will start looking for the configuration file in the directory
+# where the inspected file is and continue its way up to the root directory.
+#
+# See https://docs.rubocop.org/rubocop/configuration
+
+require: rubocop-rails
+
+inherit_mode:
+  merge:
+    - Exclude
+
+Rails/FindBy:
+  Exclude:
+    - app/helpers/application_helper.rb
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/CyclomaticComplexity:
+  Enabled: false
+
+Metrics/BlockLength:
+  IgnoredMethods: ['describe', 'context', 'it']
+  Exclude:
+    - spec/mock_data/photo_data.rb
+    - spec/mock_data/video_data.rb
+
+Layout/LineLength:
+  Exclude:
+    - 'bin/**/*'
+    - spec/helper_methods.rb
+    - spec/mock_data/photo_data.rb
+    - spec/mock_data/video_data.rb
+
+Metrics/MethodLength:
+  Exclude:
+    - spec/mock_data/photo_data.rb
+    - spec/mock_data/video_data.rb
+    - app/serializers/air_quality_serializer.rb
+    - app/serializers/learning_resources_serializer.rb
+
+Naming/VariableNumber:
+  Exclude:
+    - 'spec/**/*'
+
+Metrics/AbcSize:
+  IgnoredMethods: ['login', 'create']
+
+Style/StringLiterals:
+  Enabled: true
+  EnforcedStyle: double_quotes
+  SupportedStyles:
+    - single_quotes
+    - double_quotes
+  ConsistentQuotesInMultiline: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
