@@ -18,7 +18,7 @@ RSpec.describe "/", type: :feature do
       expect(page).to have_content("Nutrition:")
       expect(page).to have_content("Calories: 52")
       expect(page).to have_content("Fat: 0.4")
-      expect(page).to have_content("Sugar: 0.4")
+      expect(page).to have_content("Sugar: 10.3")
       expect(page).to have_content("Carbohydrates: 11.4")
       expect(page).to have_content("Protein: 0.3")
     end
