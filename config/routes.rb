@@ -4,4 +4,9 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root "welcome#index"
   resources :fruits, only: %i[create]
+
+  namespace :fruits do
+    resources :nutritional, only: %i[index]
+  end
+
 end

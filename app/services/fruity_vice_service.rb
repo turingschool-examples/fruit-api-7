@@ -3,6 +3,10 @@ class FruityViceService
     get_url("/api/fruit/#{query}")
   end
 
+  def related_by_calories(max_calories)
+    get_url("/api/fruit/calories?max=#{max_calories}")
+  end
+
   private
 
   def get_url(url)
