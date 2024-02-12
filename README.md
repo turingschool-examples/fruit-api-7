@@ -30,7 +30,7 @@ As a user,
 When I visit the root path ("/"),
 I see a form with a search box for fruit and a button. 
 When I enter the name of a fruit and click "Search"
-I am taken to the "/foods" page
+I am taken to the "/fruits" page
 And I see information about that fruit, including
  - name
  - family
