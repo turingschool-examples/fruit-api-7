@@ -17,7 +17,8 @@ Requires Ruby 3.2.2 and Rails 7.1.2
 ## Challenge
 
 3. Review the [FruityVice API](https://www.fruityvice.com/doc/index.html) - this is a free service with no API Key requirement. 
-   1. Make some test calls in Postman and/or your browser to get a feel for how it works. 
+   1. Make some test calls in Postman and/or your browser to get a feel for how it works.
+   2. The base url for this API is https://www.fruityvice.com
 4. When ready, complete the user story below. 
 
 **NOTE**: This application comes with a pre-built form at the `"welcome#index"` action and view. *Do not change the path for this form*, rather make the pre-existing form work alongside the user story below. 
